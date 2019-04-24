@@ -251,7 +251,7 @@ void AlignmentValidationQC8::analyze(const edm::Event& e, const edm::EventSetup&
   trajPhi = trajMomentum.phi();
   trajChi2 = bestTraj.chiSquared()/float(bestTraj.ndof());
 
-  cout << "arrivo qua" <<endl;
+//  cout << "arrivo qua" <<endl;
   for(int c=0; c<n_ch;c++)
     {
       GEMChamber ch = gemChambers[c];
@@ -364,7 +364,7 @@ void AlignmentValidationQC8::analyze(const edm::Event& e, const edm::EventSetup&
 	    }
 	}
     }
-  cout << "Entro qua e dovrei scrivere il tree con queste info " << "chRecHitX[0] " << chRecHitX[0] << "chRecHitY[0] " << chRecHitY[0] << "chRecHitZ[0] " << chRecHitZ[0] << endl;
+//  cout << "Entro qua e dovrei scrivere il tree con queste info " << "chRecHitX[0] " << chRecHitX[0] << "chRecHitY[0] " << chRecHitY[0] << "chRecHitZ[0] " << chRecHitZ[0] << endl;
   tree->Fill();
   hev->Fill(2);
   //tree->Fill();
